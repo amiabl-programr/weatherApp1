@@ -10,6 +10,7 @@
 
 #api
 .env
+/.vscode
 
 # production
 /build
