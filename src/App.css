@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: #3a4056;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+nav,
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 29px;
+  border: none;
+}
+
+.weather__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp__image {
+  width: 150px;
+}
