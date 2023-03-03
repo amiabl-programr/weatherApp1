@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
-import cloud from "./cloud.png";
+import cloud from "./assets/cloud.png";
 
 
 
 const App = () => {
   const [data, setData] = useState({});
-  const [location, setLocation] = useState("London");
+  const [location, setLocation] = useState("");
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
   // use string literals for the api key
