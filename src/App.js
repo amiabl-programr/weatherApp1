@@ -60,7 +60,7 @@ const App = () => {
           </nav>
         </header>
 
-        <div>{location}</div>
+
         <div className="weather__info">
           <h1 className="city__name">{data.name}</h1>
           <div className="temp__container">
