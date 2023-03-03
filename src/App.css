@@ -31,17 +31,41 @@ li {
 }
 
 input {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 29px;
   border: none;
+  width: 118px;
 }
 
 .weather__info {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+.temp__container {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .temp__image {
   width: 150px;
+}
+
+.temp {
+  font-size: 100px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section div {
+  background-color: #3a4056;
+  padding: 50px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 109px;
 }
