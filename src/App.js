@@ -4,7 +4,7 @@ import { useState } from "react";
 import Loader from "./Components/Loader";
 import "./App.css";
 import cloud from "./assets/cloud.png";
-import search_icon from "./assets/search-location.svg";
+import search_icon from "./assets/search.svg";
 
 
 
@@ -80,7 +80,7 @@ const App = () => {
 
 
         <div className="weather__info">
-          <h1 className="city__name">Lagos{data.name}</h1>
+          <h1 className="city__name">{data.name}</h1>
           <div className="temp__container">
             <span className="temp">
               {data.main && data.main.temp}
@@ -120,7 +120,7 @@ const App = () => {
             </>
 
           )
-        }
+          }
         </div>) : <Loader />}
 
       </main>
