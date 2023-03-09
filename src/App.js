@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Loader from "./Components/Loader";
 import "./App.css";
 import cloud from "./assets/cloud.png";
 import search_icon from "./assets/search-location.svg";
@@ -89,9 +90,8 @@ const App = () => {
             {/* <img src={cloud} className="temp__image" alt="temperature" /> */}
           </div>
         </div>
-
-        <div className="cards__container">
-          {data.main ? (
+        {data.main ? (<div className="cards__container">
+          {data.main && (
             <>
               <div className="cards">
                 <div>
@@ -120,9 +120,9 @@ const App = () => {
             </>
 
           )
-            :
-            <p>Loading...</p>}
-        </div>
+        }
+        </div>) : <Loader />}
+
       </main>
       <footer>
         By Victor
