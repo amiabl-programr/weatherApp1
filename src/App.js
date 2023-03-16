@@ -84,7 +84,7 @@ const App = () => {
           <div className="temp__container">
             <span className="temp">
               {data.main && data.main.temp}
-              <sup>o</sup>c
+              K
             </span>
 
             {/* <img src={cloud} className="temp__image" alt="temperature" /> */}
